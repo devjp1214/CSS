@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    /*1*/
+    .list > .inner {
+      display: inline;
+    }
+
+    /*2*/
+    .list > span {
+      display: block;
+    }
+
+    /*3*/
+    .list > a {
+      border: 1px solid #777;
+      width: 100px;
+      height: 100px;
+      display: inline-block;
+      text-align: center;
+      line-height: 100px;
+      overflow: auto;
+      text-decoration: none;
+    }
+    /*
+    width, height은 블럭 요소에만 적용 할 수 있어서 a태그에 width, height 적용해도 변화 X
+    display: block 적용 하면 배치구도가 바뀌고, display: inline-block을 적용하면 inline의 성질을 가지면서(줄바꿈 X),
+    동시에 block요소 성질도 있어서 width, height와 같은 블럭 요소에 적용할 수 있는 속성을 적용할 수 있단
+    */
+    /*
+    a 태그는 text-decoration: underline이 디폴트 설정 되어 있어서 밑줄 없애려면 text-decoration: none;
+    */
+
+    /*4*/
+    .box {display: none;}
+
+  </style>
+</head>
+<body>
+    <!-- 1. block to inline, div는 원래 블럭요소인데 disply 사용해서 inline 배치로-->
+    <div class="list">
+      <div class="inner">div tag1 (block)</div>
+      <div class="inner">div tag2 (block)</div>
+      <div class="inner">div tag3 (block)</div>
+    </div>
+
+    <!-- 2. inline to block, span은 원래 블럭요소인데 disply 사용해서 block 배치로-->  
+    <div class="list">
+      <span>span tag1 (inline)</span>
+      <span>span tag2 (inline)</span>
+      <span>span tag3 (inline)</span>
+    </div>
+
+    <!-- 3. inline to inline-block, a는 원래 인라인 요소인데 inline-block 으로 전환-->
+    <div class="list">
+      <a href ="#">a tag1 (inline)</a>
+      <a href ="#">a tag2 (inline)</a>
+      <a href ="#">a tag3 (inline)</a>
+    </div>
+
+    <!--4. display: none-->
+    <div class="box">
+      아이디와 비밀번호를 확인하세요
+    </div>
+
+</body>
+</html>

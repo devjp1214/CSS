@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    p {border: 1px solid #777;}
+
+    .tx1 {text-align: left;}
+    .tx2 {text-align: center;}
+    .tx3 {text-align: right; text-decoration: underline}
+
+    .tx4 img {vertical-align: top;}
+    .tx5 img {vertical-align: middle;}
+    .tx6 img {vertical-align: bottom;}
+
+    .box {height: 100px; line-height: 100px; text-align: center;}
+
+  </style>
+</head>
+<body>
+
+<!--text-align은 블럭 요소 자체 적용-->
+  <p class="tx1">111</p>
+  <p class="tx2">222</p>
+  <p class="tx3">333</p>
+ 
+<!--vertical-align은 기준을 잡고, 다른 요소를 그 기준에 맞추어 배치할 때 (코드는 기준 속성에 적용)-->
+  <p class="tx4">
+    444
+    <img src="img/css3.png" alt="image">
+  </p>
+  <p class="tx5">
+    555
+    <img src="img/html5.png" alt="image">
+  </p>
+  <p class="tx6">
+    666
+    <img src="img/jquery.png" alt="image">
+  </p>
+
+<!--기준이 되는 태그가 없어서 vertical-aligh을 못쓸 때 박스 높이와 line-height을 동일하게 맞추면 가운데 정렬-->
+  <p class="box">777</p>
+</body>
+</html>

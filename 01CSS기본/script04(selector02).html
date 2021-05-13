@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    /*ID 선택자(#사용, ID 이름 고유 - 1개만)*/
+    #a1 {color : red;}
+
+    /*class 선택자(.사용, class 이름 고유 x - 다수 태그)*/
+    .b1 {color : blue;}
+
+    /*연습1: abox 클래스 div 내부의 모든 p 태그 선택*/
+    .abox p {color :blueviolet;}
+
+    /*연습2: bbox 클래스 div 내부의 직속 자식인 p 태그 선택*/
+    .bbox > p {color : orange;}
+
+    /*연습3: cbox 클래스의 a, dbox 클래스의 span 선택*/
+    .cbox > a, .dbox > span {color : green;}
+
+  </style>
+</head>
+<body>
+  
+  <p id="a1">ID 선택자</p>
+  <p class="b1">class 선택자</p>
+
+  <!--연습1-->
+  <div class="abox">
+    <p>하위1</p>
+    <ul>
+      <li><p>하위2</p></li>
+    </ul>
+  </div>
+
+  <!--연습2-->
+  <div class="bbox">
+    <p>하위1</p>
+    <ul>
+      <li><p>하위2</p></li>
+    </ul>
+  </div>
+
+  <!--연습3-->
+  <div class="cbox"><a>연습3</a> </div>
+  <div class="dbox"><span>연습3</span></div>
+
+</body>
+</html>

@@ -1,0 +1,5 @@
+
+/*css 파일에서 css 파일을 import*/
+@import url("style2__script02.css");
+
+p {color : red;}

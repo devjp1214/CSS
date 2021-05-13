@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <!-- 
+    @ ctrl + /
+    @ ctrl + shif + a 범위 주석
+    Ctrl+D 같은단어 하나씩선택
+Ctrl +Shift + L 같은단어 동시선택
+Ctrl+Alt+방향키 줄동시선택
+
+Alt+Shift+위아래방향키 현재줄 바로아래에복사
+
+Alt+Shift+a 주석생성
+
+Ctrl+Shift +K 줄삭제
+    @ 태그이름*수 + tap : 수만큼 태그 한번에 만들 수 있음,     예) li*3 
+    @ alt + shift : 줄이동
+    @ alt + 좌클릭 : 선택해서 변경 가능
+    @ 커서 줄 맨 끝에 둔 상태로 ctrl + c :줄 전체 복사
+    @ CSS 적용 우선순위 : 외부 link(전체 적용) < 내부(해당 화면에만 적용) < 인라인(해당 태그에만 적용)
+  -->
+  <!--
+    1. 블럭 요소
+    - 블럭 크기(줄 전체 차지), 자동 줄바꿈
+    - 블럭 요소 안에는 블럭 요소와 인라인 요소 넣을 수 있음
+  -->
+  <h1>h1 블럭</h1>
+  <p>p 블럭</p>
+  <ul>
+    <li>ul 블럭</li>
+    <li>ol 블럭</li>
+    <li>li 블럭</li>
+  </ul>
+  <section>
+    <div>section 블럭</div>
+    <div>div 블럭</div>
+  </section>
+  <header>header 블럭</header>
+  <aside>aside 블럭</aside>
+  <article>article 블럭</article>
+  <footer>footer 블럭</footer>
+
+  <!--
+    2. 인라인 요소
+    - 줄바꿈 없음
+    - 인라인 요소 안에는 인라인 요소만 넣을 수 있음
+  -->
+  <span>span 인라인</span>
+  <span>span 인라인</span>
+  <b>b 인라인</b>
+  <img alt="인라인"/>
+  <a>a 인라인</a>
+  <a><span></span></a>
+  <p><b>p 블럭요소 안에 b 인라인 요소</b></p>
+
+</body>
+</html>

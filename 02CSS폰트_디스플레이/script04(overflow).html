@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    p {border: 1px solid #777; height: 150px;}
+
+    /*overflow: box안의 텍스트가 넘쳐 흐르지 않도록 (화면이 줄어도 box안에 남을 수 있도록) 해주는 속성*/
+    .tx1 {overflow: scroll;}
+    .tx2 {overflow: hidden;}
+    .tx3 {overflow: auto;}
+    .tx4 {overflow: visible;}
+  </style>
+</head>
+<body>
+  <!--overflow: scroll, 항상 스크롤 있음-->
+  <p class="tx1">
+    CSS was first proposed by Håkon Wium Lie on October 10, 1994. At the time, Lie was working with Tim Berners-Lee at CERN. ... Style sheets have existed in one form or another since the beginnings of Standard Generalized Markup Language (SGML) in the 1980s, and CSS was developed to provide style sheets for the web.
+  </p>
+  <!--overflow: hidden, 숨기기-->
+  <p class="tx2">
+    CSS was first proposed by Håkon Wium Lie on October 10, 1994. At the time, Lie was working with Tim Berners-Lee at CERN. ... Style sheets have existed in one form or another since the beginnings of Standard Generalized Markup Language (SGML) in the 1980s, and CSS was developed to provide style sheets for the web.
+  </p>
+  <!--overflow: auto, 넘치면 스크롤 생성-->
+  <p class="tx3">
+    CSS was first proposed by Håkon Wium Lie on October 10, 1994. At the time, Lie was working with Tim Berners-Lee at CERN. ... Style sheets have existed in one form or another since the beginnings of Standard Generalized Markup Language (SGML) in the 1980s, and CSS was developed to provide style sheets for the web.
+  </p>
+  <!--overflow: visible, 넘치는대로 방치-->
+  <p class="tx4">
+    CSS was first proposed by Håkon Wium Lie on October 10, 1994. At the time, Lie was working with Tim Berners-Lee at CERN. ... Style sheets have existed in one form or another since the beginnings of Standard Generalized Markup Language (SGML) in the 1980s, and CSS was developed to provide style sheets for the web.
+  </p>
+
+</body>
+</html>

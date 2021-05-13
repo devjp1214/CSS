@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    /*가상 선택자 (hover(커서가 닿았을 때), focus(), active(누를 때, 액션이 취해졌을 때))
+      가상 선택자는 선택한 태그 뒤에 : 을 붙여 사용
+    */
+    /*hover*/
+    .list > li > a:hover {color : red;}
+
+    /*focus*/
+    .inner > input:focus {border-color : blue;}    
+
+    /*active*/
+    .title:active {background-color : orange;}        
+  </style>
+</head>
+<body>
+
+  <!--hover-->
+  <div>
+    <ul class="list">
+      <li><a>목록1</a></li>
+      <li><a>목록2</a></li>
+      <li><a>목록3</a></li>
+    </ul>
+  </div>
+
+  <!--focus-->
+  <div class="inner">
+    <input type="text">
+    <input type="text">
+  </div>
+
+  <!--active-->
+  <p class="title">active</p>
+
+  
+</body>
+</html>

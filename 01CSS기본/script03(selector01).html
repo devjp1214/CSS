@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+
+  <style>
+    /*전역 선택자*/
+    * {margin: 0;} /*디자인 시작전에 모든 화면에 적용할 디자인을 *{} */
+    
+    /*태그 선택자*/
+    b {color : red;}
+    
+    /*다중 선택자*/
+    ul, li {list-style: none;}
+    
+    /*내포 선택자(공백)*/
+    div p {color : green;}
+    /*div 내부 모든 p 태그에 적용, 직속 자식이 아니여도 됨*/
+
+    /*직속자식 선택자(>)*/
+    section > p {color:brown;} 
+    /*section 내부 직속 자식 태그인 p 태그에만 적용*/
+      
+  </style>
+</head>
+<body>
+
+  <b>태그선택자</b>
+  <b>태그선택자</b>
+
+  <ul>
+    <li>다중선택자</li>
+    <li>다중선택자</li>
+  </ul>
+  
+  <div>
+    <p>하위선택자1</p>
+    <p>하위선택자1</p>
+    <ul>
+      <li><p>하위선택자2</p></li>
+      <li><p>하위선택자2</p></li>
+    </ul>
+  </div>
+  <!--div의 직속 자식은 p, ul-->
+
+  <section>
+    <p>하위선택자1</p>
+    <p>하위선택자1</p>
+    <ul>
+      <li><p>하위선택자2</p></li>
+      <li><p>하위선택자2</p></li>
+    </ul>
+  </section>
+
+
+</body>
+</html>
