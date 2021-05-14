@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+
+  <style>
+    p {
+      border: 1px solid #777;
+
+      /*박스의 최소크기. 200px 이하로 줄지 않는다. 단 201px 이상을 필요로 하는 내용이 들어 갈경우 크기 변함 (커짐)*/
+      min-width: 200px;
+      min-height: 200px;;
+    }
+
+    #max {
+      /*min-width, min-height 반대 */
+      max-width: 900px;
+      max-height: 900px;
+    }
+  </style>
+</head>
+<body>
+  
+  <p>
+    안녕하세요<br/>
+    안녕하세요<br/>
+    안녕하세요<br/>
+    안녕하세요<br/>
+    안녕하세요<br/>
+    안녕하세요<br/>
+    안녕하세요<br/>
+    안녕하세요<br/>
+    안녕하세요<br/>
+    안녕하세요<br/>
+    안녕하세요<br/>
+    안녕하세요<br/>
+    안녕하세요<br/>
+    안녕하세요<br/>
+  </p>
+
+  <p id="max">
+    안녕하세요<br/>
+  </p>
+
+</body>
+</html>

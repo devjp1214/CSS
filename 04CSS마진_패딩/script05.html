@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+
+  <style>
+    * {padding: 0px; margin: 0px}
+    ul, li {list-style: none;}
+
+    .box {background-color: black; text-align: center;}
+    .box > ul > li > a {
+      color: white; 
+      display: block; 
+      width: 50px; 
+      height: 50px;
+      text-decoration: none;
+      line-height: 50px;
+    }
+    /*a에 블럭을 주는 이유, 꼭 글자가 아니라 그 영역에 마우스 올려도 이동 할 수 있게*/
+    .box > ul > li > a:hover {background-color: aqua;}
+    .box > ul > li {display: inline-block}
+
+  </style>
+</head>
+<body>
+  <header>
+    <nav class="box">
+      <ul>
+        <li><a href="#">메뉴</a></li>
+        <li><a href="#">메뉴</a></li>
+        <li><a href="#">메뉴</a></li>
+      </ul>
+    </nav>
+  </header>
+  <!--슬라이더 영역-->
+  <section>
+    <div>
+      <img src="img/img.jpg" alt="슬라이더1">
+    </div>
+    <div class="inner">
+      <h2>오늘의 발견</h2>
+      <div class="content">
+        <div>
+          내용물
+        </div>
+      </div>
+    </div>
+    <p>
+      section안의 p태그
+    </p>
+  </section>
+
+</body>
+</html>
